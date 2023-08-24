@@ -19,7 +19,7 @@ contract CounterTest is Test {
     function testFailDec() public {
         counter.dec();
     }
-    
+
     function testDecUnderFlow() public {
         vm.expectRevert(stdError.arithmeticError);
         counter.dec();

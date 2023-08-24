@@ -12,10 +12,6 @@ contract CounterTest is Test {
     }
 
     function testGreet() public {
-        assertEq(
-            helloWorld.greet(),
-            "Hello World!"
-        );
+        assertEq(helloWorld.greet(), "Hello World!");
     }
-
 }
